@@ -1,0 +1,35 @@
+{
+  "usuario": {
+    "id_usuario": 1,
+    "nombre": "Daniel Tornero Solano",
+    "github_username": "AssuredPigeon",
+    "correo": "danieltornero4@gmail.com"
+  },
+  "sincronizacion": {
+    "extra_repos": [
+      "labtechmovilfcitec-hash/DanceLabo",
+      "Garethsito/SDKGU-Subject-Sistem"
+    ],
+    "excluded_topics": [
+      "practica",
+      "tutorial",
+      "oculto"
+    ],
+    "excluded_repos": [
+      "AssuredPigeon/AssuredPigeon",
+      "AssuredPigeon/assuredpigeon.github.io",
+      "AssuredPigeon/Act1-7"
+    ],
+    "exclude_forks": true,
+    "aliases_nombre": {
+      "AssuredPigeon/ASPHALT": "Vialix (ASPHALT)",
+      "Garethsito/SDKGU-Subject-Sistem": "SDGKU - Subject System"
+    }
+  },
+  "opciones": {
+    "generar_descripciones_ia": true,
+    "mostrar_grafica_actividad": true,
+    "metodo_actualizacion": "github-actions"
+  },
+  "perfiles_usuario": {}
+}

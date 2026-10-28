@@ -1,0 +1,20 @@
+# Variables de entorno y secretos (NUNCA subir al repositorio)
+.env
+.env.*
+!.env.example
+
+# Caché y entornos virtuales de Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Base de datos SQLite temporal de desarrollo local (PostgreSQL usa DATABASE_URL)
+data/*.db*
+data/*.db-journal
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+*.log
