@@ -1,0 +1,1093 @@
+{
+  "metadata": {
+    "ultima_sincronizacion": "2026-11-08T04:05:03.858168Z",
+    "motor_bd": "sqlite",
+    "modelo_ia": "PyTorch PortfolioReadmeNet (BiLSTM + Self-Attention)",
+    "total_repositorios": 14,
+    "total_visibles": 11,
+    "total_registros_actividad": 7
+  },
+  "usuario": {
+    "id_usuario": 1,
+    "nombre": "Daniel Tornero Solano",
+    "github_username": "AssuredPigeon",
+    "correo": "danieltornero4@gmail.com"
+  },
+  "repositorios": [
+    {
+      "id_repositorio": 1225812578,
+      "id_usuario": 1,
+      "nombre": "DanceLabo",
+      "nombre_completo": "labtechmovilfcitec-hash/DanceLabo",
+      "descripcion_original": "",
+      "descripcion_generada": "Sistema de captura y evaluación de movimiento de baile usando YOLO + MediaPipe + LSTM + Unity. Evaluar en tiempo real si un estudiante frente a la cámara replica correctamente los movimientos.",
+      "origen_descripcion": "pytorch-bilstm",
+      "puntaje_ia": 0.8376,
+      "lenguajes": [
+        "C#",
+        "Python"
+      ],
+      "topics": [],
+      "detalle_tecnico": {
+        "idioma_original": "es",
+        "resumen_es": "Sistema de captura y evaluación de movimiento de baile usando YOLO + MediaPipe + LSTM + Unity. Evaluar en tiempo real si un estudiante frente a la cámara replica correctamente los movimientos.",
+        "resumen_en": "Dance motion capture and evaluation system using YOLO + MediaPipe + LSTM + Unity. Evaluate in real time whether a student in front of the camera correctly replicates the movements.",
+        "puntos_clave_es": [
+          "Grabar movimientos de un robot 3D en Unity como secuencias de referencia.",
+          "Unity 2022.x con paquete Newtonsoft.Json.",
+          "Ver Historial de Logs: Pulsa el icono de libreta de registros en el panel de Estado para abrir la ventana modal y ver de manera detallada las tareas del backend (entrenamiento PyTorch, carga de secuencias...",
+          "En Unity: Play Mode con MovementComparator.cs y FeedbackUI.cs configurados."
+        ],
+        "puntos_clave_en": [
+          "Record movements of a 3D robot in Unity as reference sequences.",
+          "Unity 2022.x with Newtonsoft.Json package.",
+          "View Log History: Press the logbook icon in the Status panel to open the modal window and see in detail the backend tasks (PyTorch training, sequence loading...",
+          "In Unity: Play Mode with MovementComparator.cs and FeedbackUI.cs configured."
+        ],
+        "frameworks": [
+          "PyQt6",
+          "Unity",
+          "PyTorch",
+          "scikit-learn",
+          "MediaPipe",
+          "YOLOv8",
+          "OpenCV"
+        ],
+        "lenguajes_detalle": [
+          {
+            "nombre": "C#",
+            "bytes": 264202,
+            "porcentaje": 65.0
+          },
+          {
+            "nombre": "Python",
+            "bytes": 142258,
+            "porcentaje": 35.0
+          }
+        ],
+        "arquitectura_es": "Sistema Interactivo 3D + Visión/IA",
+        "arquitectura_en": "3D Interactive + Vision/AI System",
+        "modulos_detectados": [
+          "EyeController",
+          "FaceCapController"
+        ],
+        "modelos_datos": [
+          "motion_lstm"
+        ],
+        "rutas_detectadas": [],
+        "carpetas_principales": [
+          "Assets",
+          "Documentacion",
+          "LABITO",
+          "Packages",
+          "ProjectSettings",
+          "motion_ml_app",
+          "public"
+        ],
+        "colaboradores": 5,
+        "archivos_codigo": 241,
+        "rama_principal": "main",
+        "fecha_creacion": "2026-04-30T17:04:55Z",
+        "demo_url": null,
+        "nombre_app_detectado": null
+      },
+      "visible": true,
+      "url": "https://github.com/labtechmovilfcitec-hash/DanceLabo",
+      "estrellas": 0,
+      "fecha_ultimo_commit": "2026-11-02T11:43:55Z",
+      "es_fork": false,
+      "readme_consultado": true
+    },
+    {
+      "id_repositorio": 1323771424,
+      "id_usuario": 1,
+      "nombre": "semantic-review-insights",
+      "nombre_completo": "AssuredPigeon/semantic-review-insights",
+      "descripcion_original": "",
+      "descripcion_generada": "Production-ready NLP API that transforms raw user reviews into semantic intelligence. Semantic Review Insights is a REST API that ingests raw, unstructured user reviews and exposes them as queryable semantic data.",
+      "origen_descripcion": "pytorch-bilstm",
+      "puntaje_ia": 0.8738,
+      "lenguajes": [
+        "TypeScript",
+        "Python",
+        "HTML",
+        "CSS",
+        "Dockerfile",
+        "Shell",
+        "Mako"
+      ],
+      "topics": [],
+      "detalle_tecnico": {
+        "idioma_original": "en",
+        "resumen_es": "API de PNL lista para producción que transforma las opiniones de los usuarios sin procesar en inteligencia semántica. Semantic Review Insights es una API REST que ingiere reseñas de usuarios sin procesar y no estructuradas y las expone como datos semánticos consultables.",
+        "resumen_en": "Production-ready NLP API that transforms raw user reviews into semantic intelligence. Semantic Review Insights is a REST API that ingests raw, unstructured user reviews and exposes them as queryable semantic data.",
+        "puntos_clave_es": [
+          "Construido en solitario de un extremo a otro: canalización de PNL, capa API, autenticación, paginación y pruebas.",
+          "El texto de revisión sin procesar se valida (longitud, detección de idioma, heurística de spam), se vectoriza con transformadores de oraciones y se almacena en pgvector, traduciendo el lenguaje no estructurado en vectores semánticos de alta dimensión.",
+          "Paginación sin estado y compatible con caché mediante cursores opacos.",
+          "Pruebas unitarias para cada etapa del pipeline (validación, vectorización, almacenamiento).",
+          "PostgreSQL con extensión pgvector."
+        ],
+        "puntos_clave_en": [
+          "Built solo end-to-end: NLP pipeline, API layer, authentication, pagination, and testing.",
+          "Raw review text is validated (length, language detection, spam heuristics), vectorized with sentence-transformers, and stored in pgvector — translating unstructured language into high-dimensional semantic vectors.",
+          "Stateless, cache-friendly pagination using opaque cursors.",
+          "Unit tests for each pipeline stage (validation, vectorization, storage).",
+          "PostgreSQL with pgvector extension."
+        ],
+        "frameworks": [
+          "FastAPI",
+          "sentence-transformers",
+          "PostgreSQL",
+          "pgvector",
+          "SQLModel",
+          "Alembic",
+          "JWT",
+          "Bcrypt",
+          "Docker",
+          "pytest"
+        ],
+        "lenguajes_detalle": [
+          {
+            "nombre": "TypeScript",
+            "bytes": 275829,
+            "porcentaje": 65.8
+          },
+          {
+            "nombre": "Python",
+            "bytes": 119133,
+            "porcentaje": 28.4
+          },
+          {
+            "nombre": "HTML",
+            "bytes": 16371,
+            "porcentaje": 3.9
+          },
+          {
+            "nombre": "CSS",
+            "bytes": 4187,
+            "porcentaje": 1.0
+          },
+          {
+            "nombre": "Dockerfile",
+            "bytes": 1771,
+            "porcentaje": 0.4
+          },
+          {
+            "nombre": "Shell",
+            "bytes": 1578,
+            "porcentaje": 0.4
+          },
+          {
+            "nombre": "Mako",
+            "bytes": 523,
+            "porcentaje": 0.1
+          }
+        ],
+        "arquitectura_es": "Sistema Web Full-Stack (Cliente-Servidor)",
+        "arquitectura_en": "Full-Stack Web System (Client-Server)",
+        "modulos_detectados": [
+          "items",
+          "login",
+          "private",
+          "reviews",
+          "users",
+          "new_account",
+          "reset_password",
+          "test_email",
+          "nlp_pipeline",
+          "test_items"
+        ],
+        "modelos_datos": [],
+        "rutas_detectadas": [],
+        "carpetas_principales": [
+          "backend",
+          "frontend",
+          "hooks",
+          "scripts"
+        ],
+        "colaboradores": 1,
+        "archivos_codigo": 194,
+        "rama_principal": "main",
+        "fecha_creacion": "2026-08-05T07:40:35Z",
+        "demo_url": null,
+        "nombre_app_detectado": null
+      },
+      "visible": true,
+      "url": "https://github.com/AssuredPigeon/semantic-review-insights",
+      "estrellas": 0,
+      "fecha_ultimo_commit": "2026-11-01T13:28:26Z",
+      "es_fork": false,
+      "readme_consultado": true
+    },
+    {
+      "id_repositorio": 1076399238,
+      "id_usuario": 1,
+      "nombre": "SDGKU - Subject System",
+      "nombre_completo": "Garethsito/SDKGU-Subject-Sistem",
+      "descripcion_original": "",
+      "descripcion_generada": "Sistema Web Full-Stack (Cliente-Servidor) (universidad-api) construido con NestJS, Prisma, JWT, Bcrypt, Helmet, integrando módulos clave como activityTimelineController, activityTimelineModule, activityTimelineService, administratorsController.",
+      "origen_descripcion": "codigo-fuente",
+      "puntaje_ia": 0.72,
+      "lenguajes": [
+        "HTML",
+        "JavaScript",
+        "TypeScript"
+      ],
+      "topics": [],
+      "detalle_tecnico": {
+        "idioma_original": "codigo",
+        "resumen_es": "Sistema Web Full-Stack (Cliente-Servidor) (universidad-api) construido con NestJS, Prisma, JWT, Bcrypt, Helmet, integrando módulos clave como activityTimelineController, activityTimelineModule, activityTimelineService, administratorsController.",
+        "resumen_en": "Full-Stack Web System (Client-Server) (universidad-api) built with NestJS, Prisma, JWT, Bcrypt, Helmet, integrating core modules such as activityTimelineController, activityTimelineModule, activityTimelineService, administratorsController.",
+        "puntos_clave_es": [
+          "Tecnologías y librerías verificadas en manifiestos del proyecto: NestJS, Prisma, JWT, Bcrypt, Helmet, Nodemailer.",
+          "Componentes y módulos implementados en el código fuente: activityTimelineController, activityTimelineModule, activityTimelineService, administratorsController, administratorsModule, administratorsServices, appController.",
+          "Modelo de datos con 10 entidades detectadas (Program, Course, ProgramCourse, Teacher, Student, Prerequisite, Session).",
+          "Base de código de 91 archivos desarrollada en equipo (6 colaboradores) (HTML (40.6%) · JavaScript (35.7%) · TypeScript (23.7%))."
+        ],
+        "puntos_clave_en": [
+          "Technologies and libraries verified in project manifests: NestJS, Prisma, JWT, Bcrypt, Helmet, Nodemailer.",
+          "Components and modules implemented in source code: activityTimelineController, activityTimelineModule, activityTimelineService, administratorsController, administratorsModule, administratorsServices, appController.",
+          "Data model featuring 10 detected entities (Program, Course, ProgramCourse, Teacher, Student, Prerequisite, Session).",
+          "Codebase of 91 source files developed in a team (6 contributors) (HTML (40.6%) · JavaScript (35.7%) · TypeScript (23.7%))."
+        ],
+        "frameworks": [
+          "NestJS",
+          "Prisma",
+          "JWT",
+          "Bcrypt",
+          "Helmet",
+          "Nodemailer"
+        ],
+        "lenguajes_detalle": [
+          {
+            "nombre": "HTML",
+            "bytes": 285589,
+            "porcentaje": 40.6
+          },
+          {
+            "nombre": "JavaScript",
+            "bytes": 250749,
+            "porcentaje": 35.7
+          },
+          {
+            "nombre": "TypeScript",
+            "bytes": 166687,
+            "porcentaje": 23.7
+          }
+        ],
+        "arquitectura_es": "Sistema Web Full-Stack (Cliente-Servidor)",
+        "arquitectura_en": "Full-Stack Web System (Client-Server)",
+        "modulos_detectados": [
+          "activityTimelineController",
+          "activityTimelineModule",
+          "activityTimelineService",
+          "administratorsController",
+          "administratorsModule",
+          "administratorsServices",
+          "appController",
+          "appModule",
+          "appService",
+          "authController"
+        ],
+        "modelos_datos": [
+          "Program",
+          "Course",
+          "ProgramCourse",
+          "Teacher",
+          "Student",
+          "Prerequisite",
+          "Session",
+          "CourseOffering",
+          "Enrollment",
+          "Transfer"
+        ],
+        "rutas_detectadas": [],
+        "carpetas_principales": [
+          "Back-end",
+          "Front-end"
+        ],
+        "colaboradores": 6,
+        "archivos_codigo": 91,
+        "rama_principal": "main",
+        "fecha_creacion": "2025-10-14T20:01:19Z",
+        "demo_url": null,
+        "nombre_app_detectado": "universidad-api"
+      },
+      "visible": true,
+      "url": "https://github.com/Garethsito/SDKGU-Subject-Sistem",
+      "estrellas": 0,
+      "fecha_ultimo_commit": "2026-10-26T04:38:45Z",
+      "es_fork": false,
+      "readme_consultado": true
+    },
+    {
+      "id_repositorio": 1153127714,
+      "id_usuario": 1,
+      "nombre": "AssuredPigeon",
+      "nombre_completo": "AssuredPigeon/AssuredPigeon",
+      "descripcion_original": "",
+      "descripcion_generada": null,
+      "origen_descripcion": "metadatos",
+      "puntaje_ia": 0.0,
+      "lenguajes": [],
+      "topics": [],
+      "detalle_tecnico": {},
+      "visible": false,
+      "url": "https://github.com/AssuredPigeon/AssuredPigeon",
+      "estrellas": 0,
+      "fecha_ultimo_commit": "2026-08-25T06:15:16Z",
+      "es_fork": false,
+      "readme_consultado": false
+    },
+    {
+      "id_repositorio": 1345741317,
+      "id_usuario": 1,
+      "nombre": "Semantic-Visualization",
+      "nombre_completo": "AssuredPigeon/Semantic-Visualization",
+      "descripcion_original": "",
+      "descripcion_generada": "Interactive research platform for visualizing and analyzing GSGP (Geometric Semantic Genetic Programming) training evolution. Real-time 3D rotation with smooth camera animation.",
+      "origen_descripcion": "pytorch-bilstm",
+      "puntaje_ia": 0.8654,
+      "lenguajes": [
+        "Python",
+        "JavaScript",
+        "HTML",
+        "CSS"
+      ],
+      "topics": [],
+      "detalle_tecnico": {
+        "idioma_original": "en",
+        "resumen_es": "Plataforma de investigación interactiva para visualizar y analizar la evolución de la formación GSGP (Programación Genética Semántica Geométrica). Rotación 3D en tiempo real con animación de cámara fluida.",
+        "resumen_en": "Interactive research platform for visualizing and analyzing GSGP (Geometric Semantic Genetic Programming) training evolution. Real-time 3D rotation with smooth camera animation.",
+        "puntos_clave_es": [
+          "La Visualización Semántica es una herramienta de investigación desarrollada en la UABC/TecNM Tijuana para explorar cómo las poblaciones de programación genética evolucionan en el espacio semántico a través de generaciones.",
+          "Cargue un CSV con datos de entrenamiento y vea instantáneamente proyecciones 2D/3D, análisis de convergencia e interpretación impulsada por IA.",
+          "Detección automática 2D/3D basada en dimensiones de datos.",
+          "Integración API de Google Gemini para análisis automático de patrones evolutivos.",
+          "Sistema de atributos data-i18n con persistencia de almacenamiento local."
+        ],
+        "puntos_clave_en": [
+          "Semantic Visualization is a research tool developed at UABC / TecNM Tijuana to explore how genetic programming populations evolve in semantic space across generations.",
+          "Upload a CSV with training data and instantly see 2D/3D projections, convergence analysis, and AI-powered interpretation.",
+          "Automatic 2D/3D detection based on data dimensions.",
+          "Google Gemini API integration for automatic analysis of evolutionary patterns.",
+          "data-i18n attribute system with localStorage persistence."
+        ],
+        "frameworks": [
+          "Flask",
+          "scikit-learn",
+          "Gemini API",
+          "Plotly",
+          "Matplotlib",
+          "ReportLab",
+          "Pandas"
+        ],
+        "lenguajes_detalle": [
+          {
+            "nombre": "Python",
+            "bytes": 321096,
+            "porcentaje": 61.1
+          },
+          {
+            "nombre": "JavaScript",
+            "bytes": 142514,
+            "porcentaje": 27.1
+          },
+          {
+            "nombre": "HTML",
+            "bytes": 52179,
+            "porcentaje": 9.9
+          },
+          {
+            "nombre": "CSS",
+            "bytes": 9706,
+            "porcentaje": 1.8
+          }
+        ],
+        "arquitectura_es": "Sistema Web Full-Stack (Cliente-Servidor)",
+        "arquitectura_en": "Full-Stack Web System (Client-Server)",
+        "modulos_detectados": [
+          "visualization_2d",
+          "visualization_3d",
+          "visualization_auto",
+          "visualization"
+        ],
+        "modelos_datos": [],
+        "rutas_detectadas": [
+          "/visualization",
+          "/upload",
+          "/process",
+          "/visualize",
+          "/api/statistics",
+          "/api/convergence"
+        ],
+        "carpetas_principales": [
+          "backend",
+          "frontend"
+        ],
+        "colaboradores": 2,
+        "archivos_codigo": 18,
+        "rama_principal": "main",
+        "fecha_creacion": "2026-08-25T05:56:58Z",
+        "demo_url": null,
+        "nombre_app_detectado": null
+      },
+      "visible": true,
+      "url": "https://github.com/AssuredPigeon/Semantic-Visualization",
+      "estrellas": 0,
+      "fecha_ultimo_commit": "2026-08-25T06:10:18Z",
+      "es_fork": false,
+      "readme_consultado": true
+    },
+    {
+      "id_repositorio": 1318864516,
+      "id_usuario": 1,
+      "nombre": "musicbot",
+      "nombre_completo": "AssuredPigeon/musicbot",
+      "descripcion_original": "",
+      "descripcion_generada": "Built as a full-stack backend engineering project combining speech recognition, real-time audio processing, caching, and cloud deployment. Voice Command Pipeline.",
+      "origen_descripcion": "pytorch-bilstm",
+      "puntaje_ia": 0.877,
+      "lenguajes": [
+        "Python",
+        "JavaScript",
+        "Shell"
+      ],
+      "topics": [],
+      "detalle_tecnico": {
+        "idioma_original": "en",
+        "resumen_es": "Creado como un proyecto de ingeniería backend completo que combina reconocimiento de voz, procesamiento de audio en tiempo real, almacenamiento en caché e implementación en la nube. Canalización de comandos de voz.",
+        "resumen_en": "Built as a full-stack backend engineering project combining speech recognition, real-time audio processing, caching, and cloud deployment. Voice Command Pipeline.",
+        "puntos_clave_es": [
+          "Un bot de Discord listo para producción que permite a los usuarios controlar la reproducción de música mediante comandos de voz en lugar de comandos de texto.",
+          "No se requieren claves API pagas externas.",
+          "Ingeniería backend: descomposición de servicios, gestión de tareas asíncronas.",
+          "API REST: punto final interno de Flask, API de Spotify, extracción de YouTube.",
+          "PM2: gestión del proceso de producción, reinicio automático, registro."
+        ],
+        "puntos_clave_en": [
+          "A production-ready Discord bot that lets users control music playback through voice commands instead of text commands.",
+          "No external paid API keys required.",
+          "Backend Engineering — service decomposition, async task management.",
+          "REST APIs — Flask internal endpoint, Spotify API, YouTube extraction.",
+          "PM2 — production process management, auto-restart, logging."
+        ],
+        "frameworks": [
+          "Flask",
+          "OpenAI Whisper",
+          "Discord.py",
+          "yt-dlp",
+          "SQLite",
+          "Tortoise ORM"
+        ],
+        "lenguajes_detalle": [
+          {
+            "nombre": "Python",
+            "bytes": 348229,
+            "porcentaje": 97.8
+          },
+          {
+            "nombre": "JavaScript",
+            "bytes": 5534,
+            "porcentaje": 1.6
+          },
+          {
+            "nombre": "Shell",
+            "bytes": 2178,
+            "porcentaje": 0.6
+          }
+        ],
+        "arquitectura_es": "Bot en Tiempo Real y Procesamiento de Audio",
+        "arquitectura_en": "Real-Time Bot & Audio Pipeline",
+        "modulos_detectados": [],
+        "modelos_datos": [],
+        "rutas_detectadas": [],
+        "carpetas_principales": [
+          "data",
+          "modules",
+          "scripts",
+          "translator",
+          "utils"
+        ],
+        "colaboradores": 1,
+        "archivos_codigo": 46,
+        "rama_principal": "main",
+        "fecha_creacion": "2026-08-01T01:07:52Z",
+        "demo_url": null,
+        "nombre_app_detectado": null
+      },
+      "visible": true,
+      "url": "https://github.com/AssuredPigeon/musicbot",
+      "estrellas": 0,
+      "fecha_ultimo_commit": "2026-08-17T04:12:12Z",
+      "es_fork": false,
+      "readme_consultado": true
+    },
+    {
+      "id_repositorio": 1153118228,
+      "id_usuario": 1,
+      "nombre": "Vialix (ASPHALT)",
+      "nombre_completo": "AssuredPigeon/ASPHALT",
+      "descripcion_original": "",
+      "descripcion_generada": "Plataforma Móvil Full-Stack + API (asphalt-movil) construida con Express, React Native, Expo, React, PostgreSQL, integrando módulos clave como Badges, EditProfile, LanguageScreen, SettingsScreen.",
+      "origen_descripcion": "codigo-fuente",
+      "puntaje_ia": 0.72,
+      "lenguajes": [
+        "TypeScript",
+        "JavaScript"
+      ],
+      "topics": [],
+      "detalle_tecnico": {
+        "idioma_original": "codigo",
+        "resumen_es": "Plataforma Móvil Full-Stack + API (asphalt-movil) construida con Express, React Native, Expo, React, PostgreSQL, integrando módulos clave como Badges, EditProfile, LanguageScreen, SettingsScreen.",
+        "resumen_en": "Full-Stack Mobile + API Platform (asphalt-movil) built with Express, React Native, Expo, React, PostgreSQL, integrating core modules such as Badges, EditProfile, LanguageScreen, SettingsScreen.",
+        "puntos_clave_es": [
+          "Tecnologías y librerías verificadas en manifiestos del proyecto: Express, React Native, Expo, React, PostgreSQL, MySQL, Supabase, JWT.",
+          "Componentes y módulos implementados en el código fuente: Badges, EditProfile, LanguageScreen, SettingsScreen, VoiceScreen, authMiddleware, premiumMiddleware.",
+          "Rutas y endpoints expuestos por la aplicación: /auth, /api/vehiculos, /api/viajes, /api/anomalias, /api/users.",
+          "Base de código de 122 archivos desarrollada en equipo (3 colaboradores) (TypeScript (74.9%) · JavaScript (25.1%))."
+        ],
+        "puntos_clave_en": [
+          "Technologies and libraries verified in project manifests: Express, React Native, Expo, React, PostgreSQL, MySQL, Supabase, JWT.",
+          "Components and modules implemented in source code: Badges, EditProfile, LanguageScreen, SettingsScreen, VoiceScreen, authMiddleware, premiumMiddleware.",
+          "Application routes and exposed endpoints: /auth, /api/vehiculos, /api/viajes, /api/anomalias, /api/users.",
+          "Codebase of 122 source files developed in a team (3 contributors) (TypeScript (74.9%) · JavaScript (25.1%))."
+        ],
+        "frameworks": [
+          "Express",
+          "React Native",
+          "Expo",
+          "React",
+          "PostgreSQL",
+          "MySQL",
+          "Supabase",
+          "JWT",
+          "Bcrypt",
+          "Nodemailer"
+        ],
+        "lenguajes_detalle": [
+          {
+            "nombre": "TypeScript",
+            "bytes": 247615,
+            "porcentaje": 74.9
+          },
+          {
+            "nombre": "JavaScript",
+            "bytes": 83105,
+            "porcentaje": 25.1
+          }
+        ],
+        "arquitectura_es": "Plataforma Móvil Full-Stack + API",
+        "arquitectura_en": "Full-Stack Mobile + API Platform",
+        "modulos_detectados": [
+          "Badges",
+          "EditProfile",
+          "LanguageScreen",
+          "SettingsScreen",
+          "VoiceScreen",
+          "authMiddleware",
+          "premiumMiddleware",
+          "alertas.routes",
+          "anomalias.routes",
+          "auth"
+        ],
+        "modelos_datos": [],
+        "rutas_detectadas": [
+          "/auth",
+          "/api/vehiculos",
+          "/api/viajes",
+          "/api/anomalias",
+          "/api/users",
+          "/api/gamificacion"
+        ],
+        "carpetas_principales": [
+          "app",
+          "assets",
+          "backend",
+          "components",
+          "constants",
+          "context",
+          "hooks",
+          "locales"
+        ],
+        "colaboradores": 3,
+        "archivos_codigo": 122,
+        "rama_principal": "main",
+        "fecha_creacion": "2026-02-08T23:11:30Z",
+        "demo_url": null,
+        "nombre_app_detectado": "asphalt-movil"
+      },
+      "visible": true,
+      "url": "https://github.com/AssuredPigeon/ASPHALT",
+      "estrellas": 0,
+      "fecha_ultimo_commit": "2026-05-25T06:36:08Z",
+      "es_fork": false,
+      "readme_consultado": true
+    },
+    {
+      "id_repositorio": 1239121231,
+      "id_usuario": 1,
+      "nombre": "animeExplorerContSol",
+      "nombre_completo": "AssuredPigeon/animeExplorerContSol",
+      "descripcion_original": "",
+      "descripcion_generada": "Aplicación Web MVC (Laravel) construida con Laravel, integrando módulos clave como BenchmarkApi, AnimeController, AuthController, FavoriteController.",
+      "origen_descripcion": "codigo-fuente",
+      "puntaje_ia": 0.72,
+      "lenguajes": [
+        "Blade",
+        "PHP",
+        "JavaScript",
+        "CSS"
+      ],
+      "topics": [],
+      "detalle_tecnico": {
+        "idioma_original": "codigo",
+        "resumen_es": "Aplicación Web MVC (Laravel) construida con Laravel, integrando módulos clave como BenchmarkApi, AnimeController, AuthController, FavoriteController.",
+        "resumen_en": "MVC Web Application (Laravel) built with Laravel, integrating core modules such as BenchmarkApi, AnimeController, AuthController, FavoriteController.",
+        "puntos_clave_es": [
+          "Tecnologías y librerías verificadas en manifiestos del proyecto: Laravel.",
+          "Componentes y módulos implementados en el código fuente: BenchmarkApi, AnimeController, AuthController, FavoriteController, HomeController, JikanService, PerformanceService.",
+          "Modelo de datos con 2 entidades detectadas (Favorite, User).",
+          "Base de código de 62 archivos desarrollada en equipo (2 colaboradores) (Blade (66.0%) · PHP (33.7%) · JavaScript (0.2%))."
+        ],
+        "puntos_clave_en": [
+          "Technologies and libraries verified in project manifests: Laravel.",
+          "Components and modules implemented in source code: BenchmarkApi, AnimeController, AuthController, FavoriteController, HomeController, JikanService, PerformanceService.",
+          "Data model featuring 2 detected entities (Favorite, User).",
+          "Codebase of 62 source files developed in a team (2 contributors) (Blade (66.0%) · PHP (33.7%) · JavaScript (0.2%))."
+        ],
+        "frameworks": [
+          "Laravel"
+        ],
+        "lenguajes_detalle": [
+          {
+            "nombre": "Blade",
+            "bytes": 177818,
+            "porcentaje": 66.0
+          },
+          {
+            "nombre": "PHP",
+            "bytes": 90646,
+            "porcentaje": 33.7
+          },
+          {
+            "nombre": "JavaScript",
+            "bytes": 458,
+            "porcentaje": 0.2
+          },
+          {
+            "nombre": "CSS",
+            "bytes": 390,
+            "porcentaje": 0.1
+          }
+        ],
+        "arquitectura_es": "Aplicación Web MVC (Laravel)",
+        "arquitectura_en": "MVC Web Application (Laravel)",
+        "modulos_detectados": [
+          "BenchmarkApi",
+          "AnimeController",
+          "AuthController",
+          "FavoriteController",
+          "HomeController",
+          "JikanService",
+          "PerformanceService"
+        ],
+        "modelos_datos": [
+          "Favorite",
+          "User"
+        ],
+        "rutas_detectadas": [],
+        "carpetas_principales": [
+          "app",
+          "bootstrap",
+          "config",
+          "database",
+          "public",
+          "resources",
+          "routes",
+          "tests"
+        ],
+        "colaboradores": 2,
+        "archivos_codigo": 62,
+        "rama_principal": "main",
+        "fecha_creacion": "2026-05-14T19:30:49Z",
+        "demo_url": null,
+        "nombre_app_detectado": null
+      },
+      "visible": true,
+      "url": "https://github.com/AssuredPigeon/animeExplorerContSol",
+      "estrellas": 0,
+      "fecha_ultimo_commit": "2026-05-18T04:32:35Z",
+      "es_fork": false,
+      "readme_consultado": true
+    },
+    {
+      "id_repositorio": 1230221566,
+      "id_usuario": 1,
+      "nombre": "App5Unidades",
+      "nombre_completo": "AssuredPigeon/App5Unidades",
+      "descripcion_original": "",
+      "descripcion_generada": "Aplicación Móvil Multiplataforma (AppMoviles) construida con React Native, Expo, React, integrando módulos clave como MainNavigator, FlujoDVidaScreen, StackNavigator, DetalleScreen.",
+      "origen_descripcion": "codigo-fuente",
+      "puntaje_ia": 0.72,
+      "lenguajes": [
+        "JavaScript"
+      ],
+      "topics": [],
+      "detalle_tecnico": {
+        "idioma_original": "codigo",
+        "resumen_es": "Aplicación Móvil Multiplataforma (AppMoviles) construida con React Native, Expo, React, integrando módulos clave como MainNavigator, FlujoDVidaScreen, StackNavigator, DetalleScreen.",
+        "resumen_en": "Cross-Platform Mobile Application (AppMoviles) built with React Native, Expo, React, integrating core modules such as MainNavigator, FlujoDVidaScreen, StackNavigator, DetalleScreen.",
+        "puntos_clave_es": [
+          "Tecnologías y librerías verificadas en manifiestos del proyecto: React Native, Expo, React.",
+          "Componentes y módulos implementados en el código fuente: MainNavigator, FlujoDVidaScreen, StackNavigator, DetalleScreen, ListaScreen, InterfazScreen, PersistenciaScreen.",
+          "Base de código de 21 archivos desarrollada de forma individual (JavaScript (100.0%))."
+        ],
+        "puntos_clave_en": [
+          "Technologies and libraries verified in project manifests: React Native, Expo, React.",
+          "Components and modules implemented in source code: MainNavigator, FlujoDVidaScreen, StackNavigator, DetalleScreen, ListaScreen, InterfazScreen, PersistenciaScreen.",
+          "Codebase of 21 source files developed individually (JavaScript (100.0%))."
+        ],
+        "frameworks": [
+          "React Native",
+          "Expo",
+          "React"
+        ],
+        "lenguajes_detalle": [
+          {
+            "nombre": "JavaScript",
+            "bytes": 65129,
+            "porcentaje": 100.0
+          }
+        ],
+        "arquitectura_es": "Aplicación Móvil Multiplataforma",
+        "arquitectura_en": "Cross-Platform Mobile Application",
+        "modulos_detectados": [
+          "MainNavigator",
+          "FlujoDVidaScreen",
+          "StackNavigator",
+          "DetalleScreen",
+          "ListaScreen",
+          "InterfazScreen",
+          "PersistenciaScreen",
+          "SensoresScreen"
+        ],
+        "modelos_datos": [],
+        "rutas_detectadas": [],
+        "carpetas_principales": [
+          "navigation",
+          "unidad1",
+          "unidad2",
+          "unidad3",
+          "unidad4",
+          "unidad5"
+        ],
+        "colaboradores": 1,
+        "archivos_codigo": 21,
+        "rama_principal": "main",
+        "fecha_creacion": "2026-05-05T19:46:40Z",
+        "demo_url": null,
+        "nombre_app_detectado": "AppMoviles"
+      },
+      "visible": true,
+      "url": "https://github.com/AssuredPigeon/App5Unidades",
+      "estrellas": 0,
+      "fecha_ultimo_commit": "2026-05-06T00:28:15Z",
+      "es_fork": false,
+      "readme_consultado": true
+    },
+    {
+      "id_repositorio": 1080858423,
+      "id_usuario": 1,
+      "nombre": "MLAD",
+      "nombre_completo": "AssuredPigeon/MLAD",
+      "descripcion_original": "",
+      "descripcion_generada": "Repositorio inicializado en GitHub sin archivos de código publicados aún en su rama principal.",
+      "origen_descripcion": "codigo-fuente",
+      "puntaje_ia": 0.0,
+      "lenguajes": [],
+      "topics": [],
+      "detalle_tecnico": {
+        "idioma_original": "vacio",
+        "resumen_es": "Repositorio inicializado en GitHub sin archivos de código publicados aún en su rama principal.",
+        "resumen_en": "Repository initialized on GitHub with no source files published on its default branch yet.",
+        "puntos_clave_es": [],
+        "puntos_clave_en": [],
+        "frameworks": [],
+        "lenguajes_detalle": [],
+        "arquitectura_es": "Proyecto de Ingeniería de Software",
+        "arquitectura_en": "Software Engineering Project",
+        "modulos_detectados": [],
+        "modelos_datos": [],
+        "rutas_detectadas": [],
+        "carpetas_principales": [],
+        "colaboradores": 1,
+        "archivos_codigo": 0,
+        "rama_principal": "main",
+        "fecha_creacion": "2025-10-22T01:02:37Z",
+        "demo_url": null,
+        "nombre_app_detectado": null
+      },
+      "visible": true,
+      "url": "https://github.com/AssuredPigeon/MLAD",
+      "estrellas": 0,
+      "fecha_ultimo_commit": "2025-10-22T01:02:37Z",
+      "es_fork": false,
+      "readme_consultado": true
+    },
+    {
+      "id_repositorio": 1070383568,
+      "id_usuario": 1,
+      "nombre": "ExoLab",
+      "nombre_completo": "AssuredPigeon/ExoLab",
+      "descripcion_original": "",
+      "descripcion_generada": "Plataforma y Dashboard de Machine Learning (ExoLab Dashboard) construida con Flask, Streamlit, scikit-learn, XGBoost, Plotly, integrando módulos clave como dashboard, RandomForest, XGBOOST, limpia.",
+      "origen_descripcion": "codigo-fuente",
+      "puntaje_ia": 0.72,
+      "lenguajes": [
+        "Python"
+      ],
+      "topics": [],
+      "detalle_tecnico": {
+        "idioma_original": "codigo",
+        "resumen_es": "Plataforma y Dashboard de Machine Learning (ExoLab Dashboard) construida con Flask, Streamlit, scikit-learn, XGBoost, Plotly, integrando módulos clave como dashboard, RandomForest, XGBOOST, limpia.",
+        "resumen_en": "Machine Learning Platform & Dashboard (ExoLab Dashboard) built with Flask, Streamlit, scikit-learn, XGBoost, Plotly, integrating core modules such as dashboard, RandomForest, XGBOOST, limpia.",
+        "puntos_clave_es": [
+          "Tecnologías y librerías verificadas en manifiestos del proyecto: Flask, Streamlit, scikit-learn, XGBoost, Plotly, Matplotlib, Pandas.",
+          "Componentes y módulos implementados en el código fuente: dashboard, RandomForest, XGBOOST, limpia, posTrainFunctions, preTrainFunctions, data_routes.",
+          "Base de código de 30 archivos desarrollada en equipo (2 colaboradores) (Python (100.0%))."
+        ],
+        "puntos_clave_en": [
+          "Technologies and libraries verified in project manifests: Flask, Streamlit, scikit-learn, XGBoost, Plotly, Matplotlib, Pandas.",
+          "Components and modules implemented in source code: dashboard, RandomForest, XGBOOST, limpia, posTrainFunctions, preTrainFunctions, data_routes.",
+          "Codebase of 30 source files developed in a team (2 contributors) (Python (100.0%))."
+        ],
+        "frameworks": [
+          "Flask",
+          "Streamlit",
+          "scikit-learn",
+          "XGBoost",
+          "Plotly",
+          "Matplotlib",
+          "Pandas"
+        ],
+        "lenguajes_detalle": [
+          {
+            "nombre": "Python",
+            "bytes": 115253,
+            "porcentaje": 100.0
+          }
+        ],
+        "arquitectura_es": "Plataforma y Dashboard de Machine Learning",
+        "arquitectura_en": "Machine Learning Platform & Dashboard",
+        "modulos_detectados": [
+          "dashboard",
+          "RandomForest",
+          "XGBOOST",
+          "limpia",
+          "posTrainFunctions",
+          "preTrainFunctions",
+          "data_routes",
+          "download_routes",
+          "home_routes",
+          "ml_routes"
+        ],
+        "modelos_datos": [],
+        "rutas_detectadas": [],
+        "carpetas_principales": [
+          "datasets",
+          "models",
+          "src",
+          "uploads"
+        ],
+        "colaboradores": 2,
+        "archivos_codigo": 30,
+        "rama_principal": "main",
+        "fecha_creacion": "2025-10-05T20:13:44Z",
+        "demo_url": null,
+        "nombre_app_detectado": "ExoLab Dashboard"
+      },
+      "visible": true,
+      "url": "https://github.com/AssuredPigeon/ExoLab",
+      "estrellas": 0,
+      "fecha_ultimo_commit": "2025-10-05T20:39:45Z",
+      "es_fork": false,
+      "readme_consultado": true
+    },
+    {
+      "id_repositorio": 1059259360,
+      "id_usuario": 1,
+      "nombre": "VML",
+      "nombre_completo": "AssuredPigeon/VML",
+      "descripcion_original": "",
+      "descripcion_generada": "Sistema Web Full-Stack (Cliente-Servidor) construido con Flask, integrando módulos clave como visualization-2d, visualization-3d.",
+      "origen_descripcion": "codigo-fuente",
+      "puntaje_ia": 0.72,
+      "lenguajes": [
+        "JavaScript",
+        "CSS",
+        "HTML",
+        "Python"
+      ],
+      "topics": [],
+      "detalle_tecnico": {
+        "idioma_original": "codigo",
+        "resumen_es": "Sistema Web Full-Stack (Cliente-Servidor) construido con Flask, integrando módulos clave como visualization-2d, visualization-3d.",
+        "resumen_en": "Full-Stack Web System (Client-Server) built with Flask, integrating core modules such as visualization-2d, visualization-3d.",
+        "puntos_clave_es": [
+          "Tecnologías y librerías verificadas en manifiestos del proyecto: Flask.",
+          "Componentes y módulos implementados en el código fuente: visualization-2d, visualization-3d.",
+          "Base de código de 6 archivos desarrollada en equipo (2 colaboradores) (JavaScript (79.2%) · CSS (12.7%) · HTML (7.7%))."
+        ],
+        "puntos_clave_en": [
+          "Technologies and libraries verified in project manifests: Flask.",
+          "Components and modules implemented in source code: visualization-2d, visualization-3d.",
+          "Codebase of 6 source files developed in a team (2 contributors) (JavaScript (79.2%) · CSS (12.7%) · HTML (7.7%))."
+        ],
+        "frameworks": [
+          "Flask"
+        ],
+        "lenguajes_detalle": [
+          {
+            "nombre": "JavaScript",
+            "bytes": 108530,
+            "porcentaje": 79.2
+          },
+          {
+            "nombre": "CSS",
+            "bytes": 17414,
+            "porcentaje": 12.7
+          },
+          {
+            "nombre": "HTML",
+            "bytes": 10553,
+            "porcentaje": 7.7
+          },
+          {
+            "nombre": "Python",
+            "bytes": 457,
+            "porcentaje": 0.3
+          }
+        ],
+        "arquitectura_es": "Sistema Web Full-Stack (Cliente-Servidor)",
+        "arquitectura_en": "Full-Stack Web System (Client-Server)",
+        "modulos_detectados": [
+          "visualization-2d",
+          "visualization-3d"
+        ],
+        "modelos_datos": [],
+        "rutas_detectadas": [],
+        "carpetas_principales": [
+          "backend",
+          "frontend"
+        ],
+        "colaboradores": 2,
+        "archivos_codigo": 6,
+        "rama_principal": "main",
+        "fecha_creacion": "2025-09-18T07:57:12Z",
+        "demo_url": null,
+        "nombre_app_detectado": null
+      },
+      "visible": true,
+      "url": "https://github.com/AssuredPigeon/VML",
+      "estrellas": 0,
+      "fecha_ultimo_commit": "2025-09-18T08:08:56Z",
+      "es_fork": false,
+      "readme_consultado": true
+    },
+    {
+      "id_repositorio": 880059129,
+      "id_usuario": 1,
+      "nombre": "Act1-7",
+      "nombre_completo": "AssuredPigeon/Act1-7",
+      "descripcion_original": "",
+      "descripcion_generada": null,
+      "origen_descripcion": "metadatos",
+      "puntaje_ia": 0.0,
+      "lenguajes": [
+        "Assembly"
+      ],
+      "topics": [],
+      "detalle_tecnico": {},
+      "visible": false,
+      "url": "https://github.com/AssuredPigeon/Act1-7",
+      "estrellas": 0,
+      "fecha_ultimo_commit": "2024-10-29T03:21:26Z",
+      "es_fork": false,
+      "readme_consultado": false
+    },
+    {
+      "id_repositorio": 545214495,
+      "id_usuario": 1,
+      "nombre": "assuredpigeon.github.io",
+      "nombre_completo": "AssuredPigeon/assuredpigeon.github.io",
+      "descripcion_original": "",
+      "descripcion_generada": null,
+      "origen_descripcion": "metadatos",
+      "puntaje_ia": 0.0,
+      "lenguajes": [
+        "PHP"
+      ],
+      "topics": [],
+      "detalle_tecnico": {},
+      "visible": false,
+      "url": "https://github.com/AssuredPigeon/assuredpigeon.github.io",
+      "estrellas": 0,
+      "fecha_ultimo_commit": "2022-10-13T02:15:14Z",
+      "es_fork": false,
+      "readme_consultado": false
+    }
+  ],
+  "actividad_commits": [
+    {
+      "id_actividad": 1,
+      "id_repositorio": 1225812578,
+      "fecha": "2026-09-30",
+      "cantidad_commits": 1,
+      "lenguaje_principal": "C#"
+    },
+    {
+      "id_actividad": 2,
+      "id_repositorio": 1225812578,
+      "fecha": "2026-10-12",
+      "cantidad_commits": 3,
+      "lenguaje_principal": "C#"
+    },
+    {
+      "id_actividad": 3,
+      "id_repositorio": 1225812578,
+      "fecha": "2026-10-16",
+      "cantidad_commits": 3,
+      "lenguaje_principal": "C#"
+    },
+    {
+      "id_actividad": 4,
+      "id_repositorio": 1225812578,
+      "fecha": "2026-10-19",
+      "cantidad_commits": 3,
+      "lenguaje_principal": "C#"
+    },
+    {
+      "id_actividad": 7,
+      "id_repositorio": 1076399238,
+      "fecha": "2026-10-26",
+      "cantidad_commits": 7,
+      "lenguaje_principal": "HTML"
+    },
+    {
+      "id_actividad": 5,
+      "id_repositorio": 1225812578,
+      "fecha": "2026-10-26",
+      "cantidad_commits": 4,
+      "lenguaje_principal": "C#"
+    },
+    {
+      "id_actividad": 6,
+      "id_repositorio": 1225812578,
+      "fecha": "2026-11-02",
+      "cantidad_commits": 4,
+      "lenguaje_principal": "C#"
+    }
+  ]
+}
