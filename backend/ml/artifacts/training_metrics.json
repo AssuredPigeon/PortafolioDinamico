@@ -1,0 +1,29 @@
+{
+  "architecture": "PortfolioReadmeNet (PyTorch BiLSTM + Self-Attention)",
+  "pytorch_version": "2.6.0+cpu",
+  "vocab_size": 821,
+  "dataset_size": 80,
+  "epochs": 35,
+  "best_checkpoint_metrics": {
+    "epoch": 15,
+    "train_loss": 0.2415,
+    "val_loss": 0.4196,
+    "train_acc": 0.9683,
+    "val_salience_acc": 0.9412,
+    "val_salience_precision": 1.0,
+    "val_salience_recall": 0.875,
+    "val_salience_f1": 0.9333,
+    "val_project_acc": 0.8235
+  },
+  "final_metrics": {
+    "epoch": 35,
+    "train_loss": 0.0813,
+    "val_loss": 0.6619,
+    "train_acc": 1.0,
+    "val_salience_acc": 0.8824,
+    "val_salience_precision": 1.0,
+    "val_salience_recall": 0.75,
+    "val_salience_f1": 0.8571,
+    "val_project_acc": 0.7059
+  }
+}

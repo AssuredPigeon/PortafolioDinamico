@@ -1,0 +1,643 @@
+[
+  {
+    "sentence": "Plataforma web full-stack para detectar, mapear y validar anomalías viales en tiempo real mediante sensores móviles y PostGIS.",
+    "pos_idx": 0,
+    "total_sentences": 8,
+    "lenguajes": ["TypeScript", "JavaScript"],
+    "salient": 1,
+    "portfolio_project": 1
+  },
+  {
+    "sentence": "Sistema de evaluación de movimiento en tiempo real usando visión por computadora con MediaPipe, detección de personas y redes LSTM conectadas a Unity.",
+    "pos_idx": 0,
+    "total_sentences": 10,
+    "lenguajes": ["Python", "C#"],
+    "salient": 1,
+    "portfolio_project": 1
+  },
+  {
+    "sentence": "Production-ready REST API that ingests user reviews, vectorizes text through an NLP pipeline, and exposes semantic search endpoints.",
+    "pos_idx": 0,
+    "total_sentences": 9,
+    "lenguajes": ["Python", "TypeScript"],
+    "salient": 1,
+    "portfolio_project": 1
+  },
+  {
+    "sentence": "Discord music bot controlled by real-time voice commands using speech recognition with Whisper and deployed in Docker containers.",
+    "pos_idx": 0,
+    "total_sentences": 7,
+    "lenguajes": ["Python"],
+    "salient": 1,
+    "portfolio_project": 1
+  },
+  {
+    "sentence": "Academic management system designed to automate student enrollment, manage course sessions, and generate academic progress PDF reports.",
+    "pos_idx": 0,
+    "total_sentences": 8,
+    "lenguajes": ["TypeScript", "HTML"],
+    "salient": 1,
+    "portfolio_project": 1
+  },
+  {
+    "sentence": "Interactive machine learning platform for classifying exoplanet candidates using Random Forest and XGBoost with a Streamlit dashboard.",
+    "pos_idx": 0,
+    "total_sentences": 6,
+    "lenguajes": ["Python"],
+    "salient": 1,
+    "portfolio_project": 1
+  },
+  {
+    "sentence": "Research platform to visualize and analyze genetic programming training across generations using interactive 2D and 3D projections.",
+    "pos_idx": 0,
+    "total_sentences": 9,
+    "lenguajes": ["Python", "JavaScript"],
+    "salient": 1,
+    "portfolio_project": 1
+  },
+  {
+    "sentence": "Aplicación web de comercio electrónico con catálogo filtrable, carrito persistente, pasarela de pagos y panel administrativo con autenticación JWT.",
+    "pos_idx": 0,
+    "total_sentences": 7,
+    "lenguajes": ["JavaScript", "CSS"],
+    "salient": 1,
+    "portfolio_project": 1
+  },
+  {
+    "sentence": "Microservicio en FastAPI y PostgreSQL encargado de procesar notificaciones asíncronas, registrar auditoría y exponer métricas de salud.",
+    "pos_idx": 1,
+    "total_sentences": 6,
+    "lenguajes": ["Python"],
+    "salient": 1,
+    "portfolio_project": 1
+  },
+  {
+    "sentence": "Incluye autenticación con tokens JWT, control de acceso basado en roles y validación estricta de esquemas en todos los endpoints.",
+    "pos_idx": 1,
+    "total_sentences": 8,
+    "lenguajes": ["TypeScript", "Python"],
+    "salient": 1,
+    "portfolio_project": 1
+  },
+  {
+    "sentence": "Integra un motor de visualización interactivo con gráficas dinámicas, exportación de reportes en PDF y soporte bilingüe.",
+    "pos_idx": 2,
+    "total_sentences": 9,
+    "lenguajes": ["Python", "JavaScript"],
+    "salient": 1,
+    "portfolio_project": 1
+  },
+  {
+    "sentence": "Desarrolla un motor de juego 2D en Python con física de colisiones, sistema de combate por niveles y estados animados.",
+    "pos_idx": 0,
+    "total_sentences": 5,
+    "lenguajes": ["Python"],
+    "salient": 1,
+    "portfolio_project": 1
+  },
+  {
+    "sentence": "Aplicación web para explorar catálogos de anime consumiendo una API externa con búsqueda dinámica, filtros por género y vistas responsivas.",
+    "pos_idx": 0,
+    "total_sentences": 6,
+    "lenguajes": ["PHP", "Blade", "JavaScript"],
+    "salient": 1,
+    "portfolio_project": 1
+  },
+  {
+    "sentence": "Herramienta de monitoreo en la nube que supervisa el estado de servicios, ejecuta respaldos automáticos y envía alertas preventivas.",
+    "pos_idx": 0,
+    "total_sentences": 6,
+    "lenguajes": ["Python", "Shell"],
+    "salient": 1,
+    "portfolio_project": 1
+  },
+  {
+    "sentence": "Implements spatial deduplication in PostgreSQL with PostGIS, merging nearby events and exposing a public viewport endpoint.",
+    "pos_idx": 1,
+    "total_sentences": 8,
+    "lenguajes": ["TypeScript"],
+    "salient": 1,
+    "portfolio_project": 1
+  },
+  {
+    "sentence": "Combines a Flask backend API with an interactive frontend to train classification models and inspect confusion matrices in real time.",
+    "pos_idx": 1,
+    "total_sentences": 7,
+    "lenguajes": ["Python"],
+    "salient": 1,
+    "portfolio_project": 1
+  },
+  {
+    "sentence": "Sistema de escritorio y servidor local para gestionar inventarios, órdenes de compra y trazabilidad de proveedores en tiempo real.",
+    "pos_idx": 0,
+    "total_sentences": 6,
+    "lenguajes": ["C#", "SQL"],
+    "salient": 1,
+    "portfolio_project": 1
+  },
+  {
+    "sentence": "Provides automated synchronization with external REST APIs, caching responses to respect rate limits and storing relational records.",
+    "pos_idx": 0,
+    "total_sentences": 7,
+    "lenguajes": ["Python", "JavaScript"],
+    "salient": 1,
+    "portfolio_project": 1
+  },
+  {
+    "sentence": "Motor de procesamiento de lenguaje natural entrenado en PyTorch para clasificar documentos técnicos y extraer resúmenes estructurados.",
+    "pos_idx": 0,
+    "total_sentences": 6,
+    "lenguajes": ["Python"],
+    "salient": 1,
+    "portfolio_project": 1
+  },
+  {
+    "sentence": "Aplicación modular dividida en cinco unidades temáticas con interfaz interactiva en JavaScript y validación de formularios.",
+    "pos_idx": 0,
+    "total_sentences": 5,
+    "lenguajes": ["JavaScript", "HTML"],
+    "salient": 1,
+    "portfolio_project": 1
+  },
+  {
+    "sentence": "Laravel is a web application framework with expressive, elegant syntax that attempts to take the pain out of development.",
+    "pos_idx": 0,
+    "total_sentences": 12,
+    "lenguajes": ["Blade", "PHP"],
+    "salient": 0,
+    "portfolio_project": 0
+  },
+  {
+    "sentence": "Laravel is accessible, powerful, and provides tools required for large, robust applications.",
+    "pos_idx": 1,
+    "total_sentences": 12,
+    "lenguajes": ["Blade", "PHP"],
+    "salient": 0,
+    "portfolio_project": 0
+  },
+  {
+    "sentence": "We would like to extend our thanks to the following sponsors for funding Laravel development.",
+    "pos_idx": 5,
+    "total_sentences": 12,
+    "lenguajes": ["Blade", "PHP"],
+    "salient": 0,
+    "portfolio_project": 0
+  },
+  {
+    "sentence": "This project was bootstrapped with Create React App and includes standard scripts for local testing.",
+    "pos_idx": 0,
+    "total_sentences": 8,
+    "lenguajes": ["JavaScript"],
+    "salient": 0,
+    "portfolio_project": 0
+  },
+  {
+    "sentence": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
+    "pos_idx": 0,
+    "total_sentences": 6,
+    "lenguajes": ["TypeScript", "JavaScript"],
+    "salient": 0,
+    "portfolio_project": 0
+  },
+  {
+    "sentence": "Get started by editing the main page file and saving to see your changes automatically refreshed in the browser.",
+    "pos_idx": 1,
+    "total_sentences": 6,
+    "lenguajes": ["TypeScript"],
+    "salient": 0,
+    "portfolio_project": 0
+  },
+  {
+    "sentence": "Clone the repository to your local machine, create a virtual environment, and install dependencies before running.",
+    "pos_idx": 5,
+    "total_sentences": 8,
+    "lenguajes": ["Python"],
+    "salient": 0,
+    "portfolio_project": 1
+  },
+  {
+    "sentence": "Clona este repositorio en tu carpeta local e instala las dependencias necesarias antes de iniciar el servidor.",
+    "pos_idx": 4,
+    "total_sentences": 7,
+    "lenguajes": ["JavaScript"],
+    "salient": 0,
+    "portfolio_project": 1
+  },
+  {
+    "sentence": "Permission is hereby granted, free of charge, to any person obtaining a copy of this software under the MIT License.",
+    "pos_idx": 8,
+    "total_sentences": 9,
+    "lenguajes": ["Python"],
+    "salient": 0,
+    "portfolio_project": 1
+  },
+  {
+    "sentence": "Pull requests are welcome and for major changes please open an issue first to discuss what you would like to change.",
+    "pos_idx": 7,
+    "total_sentences": 9,
+    "lenguajes": ["TypeScript"],
+    "salient": 0,
+    "portfolio_project": 1
+  },
+  {
+    "sentence": "Asegúrate de copiar el archivo de ejemplo de variables de entorno y colocar tus credenciales locales antes de probar.",
+    "pos_idx": 5,
+    "total_sentences": 8,
+    "lenguajes": ["Python"],
+    "salient": 0,
+    "portfolio_project": 1
+  },
+  {
+    "sentence": "Repositorio temporal con las actividades 1 a 7 de práctica de lenguaje ensamblador vistas durante las sesiones de laboratorio.",
+    "pos_idx": 0,
+    "total_sentences": 2,
+    "lenguajes": ["Assembly"],
+    "salient": 0,
+    "portfolio_project": 0
+  },
+  {
+    "sentence": "Ejercicios introductorios de estructuras condicionales y ciclos seguidos paso a paso desde un tutorial básico de programación.",
+    "pos_idx": 0,
+    "total_sentences": 3,
+    "lenguajes": ["Python"],
+    "salient": 0,
+    "portfolio_project": 0
+  },
+  {
+    "sentence": "Carpeta de tareas semanales y pruebas rápidas de sintaxis para practicar comandos básicos de Git en clase.",
+    "pos_idx": 0,
+    "total_sentences": 2,
+    "lenguajes": ["HTML"],
+    "salient": 0,
+    "portfolio_project": 0
+  },
+  {
+    "sentence": "In order to ensure that the community is welcoming to all, please review and abide by the Code of Conduct.",
+    "pos_idx": 9,
+    "total_sentences": 12,
+    "lenguajes": ["PHP"],
+    "salient": 0,
+    "portfolio_project": 0
+  },
+  {
+    "sentence": "If you discover a security vulnerability within the framework, please send an email to the maintainers.",
+    "pos_idx": 10,
+    "total_sentences": 12,
+    "lenguajes": ["PHP"],
+    "salient": 0,
+    "portfolio_project": 0
+  },
+  {
+    "sentence": "Consulta la tabla de contenido anterior para saltar directamente a la sección de requisitos previos y configuración manual.",
+    "pos_idx": 2,
+    "total_sentences": 10,
+    "lenguajes": ["JavaScript"],
+    "salient": 0,
+    "portfolio_project": 1
+  },
+  {
+    "sentence": "Todos los derechos reservados bajo la licencia académica distribuida al final de este documento de texto.",
+    "pos_idx": 6,
+    "total_sentences": 7,
+    "lenguajes": ["C#"],
+    "salient": 0,
+    "portfolio_project": 1
+  },
+  {
+    "sentence": "Para ejecutar las pruebas locales abre una terminal en Windows o Linux y verifica que tengas instalada la versión veinte.",
+    "pos_idx": 6,
+    "total_sentences": 8,
+    "lenguajes": ["TypeScript"],
+    "salient": 0,
+    "portfolio_project": 1
+  },
+  {
+    "sentence": "Feel free to contribute by forking the project, creating a feature branch, and submitting your changes for review.",
+    "pos_idx": 7,
+    "total_sentences": 8,
+    "lenguajes": ["Python"],
+    "salient": 0,
+    "portfolio_project": 1
+  },
+  {
+    "sentence": "Expressive, intuitive database ORM and real-time event broadcasting provided out of the box.",
+    "pos_idx": 2,
+    "total_sentences": 12,
+    "lenguajes": ["Blade", "PHP"],
+    "salient": 0,
+    "portfolio_project": 0
+  },
+  {
+    "sentence": "Welcome to your Expo app created with the default starter template for mobile development.",
+    "pos_idx": 0,
+    "total_sentences": 8,
+    "lenguajes": ["TypeScript", "JavaScript"],
+    "salient": 0,
+    "portfolio_project": 0
+  },
+  {
+    "sentence": "(Recomendado) CPU Intel i5 o superior con ocho gigabytes de memoria para ejecucion local.",
+    "pos_idx": 5,
+    "total_sentences": 10,
+    "lenguajes": ["Python", "C#"],
+    "salient": 0,
+    "portfolio_project": 1
+  },
+  {
+    "sentence": "Database agnostic schema migrations and robust background job processing included in the framework.",
+    "pos_idx": 3,
+    "total_sentences": 12,
+    "lenguajes": ["PHP"],
+    "salient": 0,
+    "portfolio_project": 0
+  },
+  {
+    "sentence": "Plataforma integral de analítica comercial, control de boletaje y asistencia inteligente en tiempo real con FastAPI y React.",
+    "pos_idx": 0,
+    "total_sentences": 9,
+    "lenguajes": ["Python", "JavaScript"],
+    "salient": 1,
+    "portfolio_project": 1
+  },
+  {
+    "sentence": "Aplicación móvil multiplataforma construida en .NET MAUI y C# para control escolar, gestión de calificaciones y persistencia local SQLite.",
+    "pos_idx": 0,
+    "total_sentences": 7,
+    "lenguajes": ["C#", "HTML"],
+    "salient": 1,
+    "portfolio_project": 1
+  },
+  {
+    "sentence": "Cross-platform mobile application built with .NET MAUI and Entity Framework featuring offline sync and role-based authentication.",
+    "pos_idx": 0,
+    "total_sentences": 8,
+    "lenguajes": ["C#"],
+    "salient": 1,
+    "portfolio_project": 1
+  },
+  {
+    "sentence": "Visualizador interactivo en 3D y realidad aumentada desarrollado con Three.js y WebXR para explorar algoritmos evolutivos en el navegador.",
+    "pos_idx": 0,
+    "total_sentences": 6,
+    "lenguajes": ["JavaScript", "HTML"],
+    "salient": 1,
+    "portfolio_project": 1
+  },
+  {
+    "sentence": "Interactive 3D molecular visualization platform with octet rule validation, chemical equation balancing, and an embedded ML classifier.",
+    "pos_idx": 0,
+    "total_sentences": 8,
+    "lenguajes": ["JavaScript", "Python"],
+    "salient": 1,
+    "portfolio_project": 1
+  },
+  {
+    "sentence": "Servicio backend REST construido con Express y SQLite para gestionar sesiones en vivo, catálogos dinámicos y paneles de transmisión.",
+    "pos_idx": 0,
+    "total_sentences": 7,
+    "lenguajes": ["JavaScript"],
+    "salient": 1,
+    "portfolio_project": 1
+  },
+  {
+    "sentence": "API REST empresarial en ASP.NET Core conectada a PostgreSQL y Supabase con documentación OpenAPI y validación de esquemas.",
+    "pos_idx": 0,
+    "total_sentences": 7,
+    "lenguajes": ["C#"],
+    "salient": 1,
+    "portfolio_project": 1
+  },
+  {
+    "sentence": "Full-stack tournament management platform for live golf scoring, automated handicap calculation, tie-breakers, and visual analytics.",
+    "pos_idx": 0,
+    "total_sentences": 9,
+    "lenguajes": ["Python", "TypeScript"],
+    "salient": 1,
+    "portfolio_project": 1
+  },
+  {
+    "sentence": "Sistema holográfico de realidad virtual con servidor Flask en Python y renderizado estereoscópico en tiempo real para visor móvil.",
+    "pos_idx": 0,
+    "total_sentences": 6,
+    "lenguajes": ["Python", "JavaScript"],
+    "salient": 1,
+    "portfolio_project": 1
+  },
+  {
+    "sentence": "Aplicación web MVC desarrollada con Laravel y Tailwind CSS que integra controladores REST, migraciones relacionales y vistas Blade.",
+    "pos_idx": 0,
+    "total_sentences": 6,
+    "lenguajes": ["PHP", "Blade", "CSS"],
+    "salient": 1,
+    "portfolio_project": 1
+  },
+  {
+    "sentence": "Pipeline de visión por computadora con OpenCV y YOLOv8 para reconocimiento de visitantes, conteo de aforo y alertas en vivo.",
+    "pos_idx": 0,
+    "total_sentences": 8,
+    "lenguajes": ["Python", "JavaScript"],
+    "salient": 1,
+    "portfolio_project": 1
+  },
+  {
+    "sentence": "Exposes asynchronous REST endpoints backed by SQLAlchemy 2.0 and PostgreSQL with automatic rate-limit handling and JSON backups.",
+    "pos_idx": 1,
+    "total_sentences": 8,
+    "lenguajes": ["Python"],
+    "salient": 1,
+    "portfolio_project": 1
+  },
+  {
+    "sentence": "Frontend web interactivo de notas con almacenamiento persistente en navegador, búsqueda instantánea por etiquetas y diseño responsivo.",
+    "pos_idx": 0,
+    "total_sentences": 5,
+    "lenguajes": ["HTML", "JavaScript", "CSS"],
+    "salient": 1,
+    "portfolio_project": 1
+  },
+  {
+    "sentence": "Real-time multiplayer desktop game written in Python and Pygame featuring custom sprite physics, audio synthesis, and level progression.",
+    "pos_idx": 0,
+    "total_sentences": 6,
+    "lenguajes": ["Python"],
+    "salient": 1,
+    "portfolio_project": 1
+  },
+  {
+    "sentence": "Implements bidirectional LSTM layers with masked self-attention in PyTorch to rank technical documentation sentences without hallucinating.",
+    "pos_idx": 1,
+    "total_sentences": 8,
+    "lenguajes": ["Python"],
+    "salient": 1,
+    "portfolio_project": 1
+  },
+  {
+    "sentence": "Arquitectura modular cliente-servidor con NestJS, Prisma ORM y React Native para trazabilidad geoespacial y reportes ciudadanos.",
+    "pos_idx": 0,
+    "total_sentences": 9,
+    "lenguajes": ["TypeScript"],
+    "salient": 1,
+    "portfolio_project": 1
+  },
+  {
+    "sentence": "Automated CI/CD synchronization workflow powered by GitHub Actions that updates relational metrics and commits nightly snapshots.",
+    "pos_idx": 2,
+    "total_sentences": 8,
+    "lenguajes": ["Python", "JavaScript"],
+    "salient": 1,
+    "portfolio_project": 1
+  },
+  {
+    "sentence": "Suite de análisis experimental de algoritmos de ordenamiento y grafos en Python con medición empírica de complejidad temporal.",
+    "pos_idx": 0,
+    "total_sentences": 6,
+    "lenguajes": ["Python"],
+    "salient": 1,
+    "portfolio_project": 1
+  },
+  {
+    "sentence": "La aplicación web abrirá en http://localhost:5173 y el servidor escuchará peticiones locales en el puerto ocho mil.",
+    "pos_idx": 5,
+    "total_sentences": 9,
+    "lenguajes": ["Python", "JavaScript"],
+    "salient": 0,
+    "portfolio_project": 1
+  },
+  {
+    "sentence": "The interactive API documentation will be available at http://localhost:8000/docs once the local development container starts.",
+    "pos_idx": 6,
+    "total_sentences": 9,
+    "lenguajes": ["Python"],
+    "salient": 0,
+    "portfolio_project": 1
+  },
+  {
+    "sentence": "BlockchainFont-Regular.woff2 and BlockchainFont-Bold.woff2 bold weight font files included for system sans-serif headings.",
+    "pos_idx": 0,
+    "total_sentences": 4,
+    "lenguajes": ["HTML", "CSS"],
+    "salient": 0,
+    "portfolio_project": 0
+  },
+  {
+    "sentence": "TechMono-Regular.woff2 and TechMono-Regular.woff system monospace fonts fallback for Courier New in static assets.",
+    "pos_idx": 1,
+    "total_sentences": 4,
+    "lenguajes": ["HTML", "CSS"],
+    "salient": 0,
+    "portfolio_project": 0
+  },
+  {
+    "sentence": "Nest framework TypeScript starter repository progressive Node.js template for building server-side applications.",
+    "pos_idx": 0,
+    "total_sentences": 7,
+    "lenguajes": ["TypeScript"],
+    "salient": 0,
+    "portfolio_project": 0
+  },
+  {
+    "sentence": "When you are ready, run the reset-project script to move the starter code to the example directory and start fresh.",
+    "pos_idx": 2,
+    "total_sentences": 8,
+    "lenguajes": ["TypeScript", "JavaScript"],
+    "salient": 0,
+    "portfolio_project": 0
+  },
+  {
+    "sentence": "Consideraciones previas e instalación en Windows paso a paso descargando el instalador oficial desde el navegador.",
+    "pos_idx": 1,
+    "total_sentences": 6,
+    "lenguajes": ["Markdown"],
+    "salient": 0,
+    "portfolio_project": 0
+  },
+  {
+    "sentence": "Ejecuta npm install en la carpeta raíz y actualiza las claves privadas dentro de tu archivo local antes de compilar.",
+    "pos_idx": 4,
+    "total_sentences": 8,
+    "lenguajes": ["JavaScript"],
+    "salient": 0,
+    "portfolio_project": 1
+  },
+  {
+    "sentence": "Open http://127.0.0.1:8000 in your browser to verify that the local environment variables were loaded properly.",
+    "pos_idx": 5,
+    "total_sentences": 8,
+    "lenguajes": ["Python"],
+    "salient": 0,
+    "portfolio_project": 1
+  },
+  {
+    "sentence": "Si aparece pantalla negra en tu dispositivo móvil revisa los permisos de cámara en el menú de ajustes del sistema.",
+    "pos_idx": 6,
+    "total_sentences": 7,
+    "lenguajes": ["C#", "Python"],
+    "salient": 0,
+    "portfolio_project": 1
+  },
+  {
+    "sentence": "Selecciona la cámara web en el selector desplegable y pulsa el botón stop para detener la grabación de prueba.",
+    "pos_idx": 5,
+    "total_sentences": 8,
+    "lenguajes": ["Python"],
+    "salient": 0,
+    "portfolio_project": 1
+  },
+  {
+    "sentence": "This software is distributed without any warranty of merchantability or fitness for a particular purpose under the Apache License.",
+    "pos_idx": 8,
+    "total_sentences": 9,
+    "lenguajes": ["C#"],
+    "salient": 0,
+    "portfolio_project": 1
+  },
+  {
+    "sentence": "Repositorio de prueba creado únicamente para validar la conexión SSH y practicar mi primer commit desde la consola.",
+    "pos_idx": 0,
+    "total_sentences": 2,
+    "lenguajes": ["HTML"],
+    "salient": 0,
+    "portfolio_project": 0
+  },
+  {
+    "sentence": "Homework exercises from week three covering basic HTML tags, CSS selectors, and two-column static layout practice.",
+    "pos_idx": 0,
+    "total_sentences": 3,
+    "lenguajes": ["HTML", "CSS"],
+    "salient": 0,
+    "portfolio_project": 0
+  },
+  {
+    "sentence": "Para detener los contenedores ejecuta docker compose down en la misma ventana de PowerShell donde iniciaste la base.",
+    "pos_idx": 7,
+    "total_sentences": 9,
+    "lenguajes": ["Python"],
+    "salient": 0,
+    "portfolio_project": 1
+  },
+  {
+    "sentence": "Autores del equipo de laboratorio turno vespertino grupo cuatrocientos dos de la facultad de ingeniería.",
+    "pos_idx": 7,
+    "total_sentences": 8,
+    "lenguajes": ["Java"],
+    "salient": 0,
+    "portfolio_project": 1
+  },
+  {
+    "sentence": "See the troubleshooting section below if port three thousand is already occupied by another background process.",
+    "pos_idx": 6,
+    "total_sentences": 8,
+    "lenguajes": ["TypeScript"],
+    "salient": 0,
+    "portfolio_project": 1
+  },
+  {
+    "sentence": "Nota importante recuerda no subir nunca tu archivo ENVIRONMENT production ni contraseñas personales al repositorio remoto.",
+    "pos_idx": 6,
+    "total_sentences": 8,
+    "lenguajes": ["Python"],
+    "salient": 0,
+    "portfolio_project": 1
+  }
+]
+
