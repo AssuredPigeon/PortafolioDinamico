@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portafolio Dinámico Auto-actualizable sincronizado automáticamente con GitHub." />
+  <title>Portafolio Dinámico · Daniel Tornero Solano</title>
+  <link rel="stylesheet" href="./src/css/styles.css?v=7" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.6/dist/chart.umd.min.js" defer></script>
+  <script type="module" src="./src/js/app.js?v=7"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="profile-summary">
+        <p class="eyebrow" id="ui-eyebrow">Portafolio Dinámico Auto-actualizable</p>
+        <h1 id="user-name">Daniel Tornero Solano</h1>
+        <p class="profile-meta">
+          <a id="user-github-link" href="https://github.com/AssuredPigeon" target="_blank" rel="noopener noreferrer">
+            @<span id="user-github">AssuredPigeon</span> ↗
+          </a>
+          <span class="meta-sep" id="user-email-sep" aria-hidden="true">·</span>
+          <a id="user-email-link" href="mailto:danieltornero4@gmail.com">
+            <span id="user-email">danieltornero4@gmail.com</span>
+          </a>
+        </p>
+      </div>
+
+      <div class="header-controls">
+        <div class="sync-badge-box" aria-live="polite">
+          <span class="status-dot" id="sync-dot"></span>
+          <div>
+            <p class="sync-label" id="sync-status-text">Cargando repositorios...</p>
+            <p class="sync-sub" id="sync-timestamp-text">Sincronización con GitHub</p>
+          </div>
+        </div>
+
+        <div class="lang-switch" role="group" aria-label="Selector de idioma / Language selector">
+          <button type="button" id="lang-es-btn" class="lang-switch-btn active" aria-pressed="true">ES</button>
+          <button type="button" id="lang-en-btn" class="lang-switch-btn" aria-pressed="false">EN</button>
+        </div>
+
+        <button type="button" id="open-config-btn" class="btn btn-secondary">
+          Configuración
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container main-content">
+    <!-- Aviso no intrusivo en caso de fallback por rate limit (Regla 7 / RNF3) -->
+    <div id="alert-banner" class="alert-banner" role="status" hidden></div>
+
+    <!-- Aviso en modo vista previa por URL (?user=NombreUsuario) -->
+    <div id="preview-banner" class="alert-banner preview-banner" role="status" hidden>
+      <span id="preview-banner-text"></span>
+      <a href="./" id="preview-exit-link" class="alert-action-link">Volver al portafolio principal</a>
+    </div>
+
+    <!-- Pantalla 3: Tendencia de Actividad (RF7 - visible cuando mostrar_grafica_actividad está activo) -->
+    <section id="activity-section" class="panel-section" aria-labelledby="activity-title" hidden>
+      <div class="section-header">
+        <div>
+          <h2 id="activity-title">Tendencia de actividad</h2>
+          <p class="section-subtitle" id="activity-subtitle">Commits por semana (últimos 2 meses)</p>
+        </div>
+      </div>
+
+      <div class="activity-metrics" id="activity-metrics">
+        <div class="metric-card">
+          <span class="metric-label" id="label-top-language">Lenguaje principal reciente</span>
+          <strong class="metric-value" id="metric-top-language">—</strong>
+        </div>
+        <div class="metric-card">
+          <span class="metric-label" id="label-streak">Racha actual</span>
+          <strong class="metric-value" id="metric-streak">—</strong>
+        </div>
+        <div class="metric-card">
+          <span class="metric-label" id="label-total-commits">Commits (últimos 2 meses)</span>
+          <strong class="metric-value" id="metric-total-commits">0</strong>
+        </div>
+      </div>
+
+      <div class="chart-wrapper">
+        <canvas id="commits-chart" aria-label="Gráfica de barras de commits por semana en los últimos 2 meses"></canvas>
+        <div id="commits-chart-fallback" class="chart-fallback" hidden></div>
+      </div>
+    </section>
+
+    <!-- Pantalla 1: Portafolio Público (Cuadrícula de tarjetas - RF4, RF5, RF6) -->
+    <section class="panel-section" aria-labelledby="projects-title">
+      <div class="section-header">
+        <div>
+          <h2 id="projects-title">Proyectos sincronizados</h2>
+          <p class="section-subtitle" id="projects-subtitle">
+            Ordenados automáticamente por actividad reciente en GitHub
+          </p>
+        </div>
+        <div class="projects-toolbar">
+          <div class="search-control">
+            <label for="project-search" class="sr-only" id="label-project-search">Buscar proyectos</label>
+            <input
+              type="search"
+              id="project-search"
+              class="input-control search-input"
+              placeholder="Buscar proyecto, tecnología o módulo..."
+              aria-label="Buscar proyectos por nombre, descripción o tecnología"
+              autocomplete="off"
+            />
+          </div>
+          <label for="language-filter" class="sr-only" id="label-language-filter">Filtrar por lenguaje</label>
+          <select id="language-filter" class="select-control" aria-label="Filtrar proyectos por lenguaje">
+            <option value="">Todos los lenguajes</option>
+          </select>
+          <label for="framework-filter" class="sr-only" id="label-framework-filter">Filtrar por framework</label>
+          <select id="framework-filter" class="select-control" aria-label="Filtrar proyectos por framework">
+            <option value="">Todos los frameworks</option>
+          </select>
+        </div>
+      </div>
+
+      <div id="projects-grid" class="projects-grid" aria-live="polite">
+        <!-- Tarjetas generadas dinámicamente -->
+      </div>
+
+      <div id="empty-state" class="empty-state" hidden>
+        <p id="empty-state-text">No se encontraron proyectos visibles con el filtro seleccionado.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pantalla 2: Detalle Profundo de Proyecto -->
+  <dialog id="project-modal" class="project-modal project-modal-wide" aria-labelledby="modal-title">
+    <article class="modal-card">
+      <header class="modal-header">
+        <div>
+          <div class="modal-path-row">
+            <p class="modal-repo-path" id="modal-repo-path"></p>
+            <span class="arch-pill" id="modal-arch-pill" hidden></span>
+          </div>
+          <h2 id="modal-title">Detalle de proyecto</h2>
+        </div>
+        <button type="button" id="modal-close-btn" class="btn-icon" aria-label="Cerrar detalle">✕</button>
+      </header>
+
+      <div class="modal-body modal-body-scroll">
+        <div class="modal-meta-row">
+          <span id="modal-updated" class="meta-pill"></span>
+          <span id="modal-repo-lang" class="meta-pill meta-pill-highlight"></span>
+          <span id="modal-team" class="meta-pill" hidden></span>
+          <span id="modal-files" class="meta-pill" hidden></span>
+          <span id="modal-stars" class="meta-pill" hidden></span>
+        </div>
+
+        <div class="modal-block description-box">
+          <div class="description-box-header">
+            <h3 class="block-label" id="modal-label-desc">Descripción del proyecto</h3>
+            <span id="modal-desc-origin" class="origin-tag"></span>
+          </div>
+          <p id="modal-description" class="modal-description-text"></p>
+        </div>
+
+        <div id="modal-highlights-block" class="modal-block" hidden>
+          <h3 class="block-label" id="modal-label-highlights">Puntos clave y arquitectura</h3>
+          <ul id="modal-highlights-list" class="highlights-list"></ul>
+        </div>
+
+        <div id="modal-lang-bar-block" class="modal-block">
+          <h3 class="block-label" id="modal-label-languages">Distribución de lenguajes</h3>
+          <div id="modal-lang-bar" class="lang-progress-bar" hidden></div>
+          <div id="modal-stack" class="stack-list"></div>
+        </div>
+
+        <div id="modal-frameworks-block" class="modal-block" hidden>
+          <h3 class="block-label" id="modal-label-frameworks">Frameworks, librerías y herramientas</h3>
+          <div id="modal-frameworks" class="stack-list"></div>
+        </div>
+
+        <div id="modal-code-entities-block" class="modal-block" hidden>
+          <h3 class="block-label" id="modal-label-entities">Módulos, rutas y entidades detectadas en código</h3>
+          <div id="modal-code-entities" class="stack-list"></div>
+        </div>
+
+        <div id="modal-topics-block" class="modal-block" hidden>
+          <h3 class="block-label" id="modal-label-topics">Topics en GitHub</h3>
+          <div id="modal-topics" class="topics-list"></div>
+        </div>
+      </div>
+
+      <footer class="modal-footer">
+        <button type="button" id="modal-secondary-close" class="btn btn-secondary">Cerrar</button>
+        <a id="modal-demo-btn" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" hidden>
+          Demo en vivo ↗
+        </a>
+        <a id="modal-github-btn" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+          Ver en GitHub ↗
+        </a>
+      </footer>
+    </article>
+  </dialog>
+
+  <!-- Pantalla 4: Configuración del Portafolio (Actividad H) -->
+  <dialog id="config-modal" class="project-modal" aria-labelledby="config-modal-title">
+    <form id="config-form" class="modal-card" novalidate>
+      <header class="modal-header">
+        <div>
+          <p class="modal-repo-path" id="cfg-eyebrow">Preferencias de sincronización y vista</p>
+          <h2 id="config-modal-title">Configuración del portafolio</h2>
+        </div>
+        <button type="button" id="config-close-btn" class="btn-icon" aria-label="Cerrar configuración">✕</button>
+      </header>
+
+      <div class="modal-body modal-body-scroll">
+        <div id="config-feedback" class="form-feedback" role="status" hidden></div>
+
+        <fieldset class="form-fieldset">
+          <legend class="form-label" id="lbl-cfg-account">Cuenta de GitHub activa</legend>
+
+          <div class="form-group">
+            <label for="cfg-github-username" class="form-label" id="lbl-cfg-username">Usuario u organización en GitHub:</label>
+            <input
+              type="text"
+              id="cfg-github-username"
+              class="input-control"
+              placeholder="AssuredPigeon"
+              autocomplete="off"
+            />
+            <span class="form-hint" id="hint-cfg-username">Cambia este usuario para generar automáticamente el portafolio de cualquier cuenta pública de GitHub.</span>
+          </div>
+
+          <div id="cfg-saved-profiles" class="saved-profiles-bar" hidden></div>
+
+          <div class="form-row-2">
+            <div class="form-group">
+              <label for="cfg-user-name" class="form-label" id="lbl-cfg-display-name">Nombre a mostrar (opcional):</label>
+              <input
+                type="text"
+                id="cfg-user-name"
+                class="input-control"
+                placeholder="Automático desde GitHub"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="cfg-user-email" class="form-label" id="lbl-cfg-email">Correo de contacto (opcional):</label>
+              <input
+                type="email"
+                id="cfg-user-email"
+                class="input-control"
+                placeholder="Opcional"
+              />
+            </div>
+          </div>
+        </fieldset>
+
+        <div class="form-group">
+          <label for="cfg-excluded-topics" class="form-label" id="lbl-cfg-topics">Excluir repos con el topic (separados por coma):</label>
+          <input
+            type="text"
+            id="cfg-excluded-topics"
+            class="input-control"
+            placeholder="practica, tutorial, oculto"
+          />
+          <span class="form-hint" id="hint-cfg-topics">Los repositorios en GitHub que tengan cualquiera de estos topics se ocultarán del portafolio.</span>
+        </div>
+
+        <div class="form-group">
+          <label for="cfg-extra-repos" class="form-label" id="lbl-cfg-extra">Repositorios colaborativos extra (dueño/repo):</label>
+          <input
+            type="text"
+            id="cfg-extra-repos"
+            class="input-control"
+            placeholder="labtechmovilfcitec-hash/DanceLabo, Garethsito/SDKGU-Subject-Sistem"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="cfg-excluded-repos" class="form-label" id="lbl-cfg-excluded">Excluir repositorios por nombre (dueño/repo):</label>
+          <input
+            type="text"
+            id="cfg-excluded-repos"
+            class="input-control"
+            placeholder="AssuredPigeon/Act1-7"
+          />
+        </div>
+
+        <fieldset class="form-fieldset">
+          <legend class="form-label" id="lbl-cfg-modules">Módulos activos</legend>
+          <label class="checkbox-row">
+            <input type="checkbox" id="cfg-use-ai" />
+            <span id="lbl-cfg-ai">Generar descripciones enriquecidas (PyTorch + Inspector de código)</span>
+          </label>
+          <label class="checkbox-row">
+            <input type="checkbox" id="cfg-show-chart" />
+            <span id="lbl-cfg-chart">Mostrar gráfica de tendencia de actividad</span>
+          </label>
+          <label class="checkbox-row">
+            <input type="checkbox" id="cfg-exclude-forks" />
+            <span id="lbl-cfg-forks">Ocultar repositorios fork automáticamente</span>
+          </label>
+        </fieldset>
+
+        <fieldset class="form-fieldset">
+          <legend class="form-label" id="lbl-cfg-method">Método de actualización automática (RF8)</legend>
+          <label class="checkbox-row">
+            <input type="radio" name="metodo_actualizacion" value="client-side" id="cfg-method-client" />
+            <span id="lbl-cfg-client">Actualizar al visitar la página (consulta automática con enfriamiento)</span>
+          </label>
+          <label class="checkbox-row">
+            <input type="radio" name="metodo_actualizacion" value="github-actions" id="cfg-method-actions" />
+            <span id="lbl-cfg-actions">Actualizar cada noche con job programado (GitHub Actions)</span>
+          </label>
+        </fieldset>
+
+        <div id="cfg-admin-key-group" class="form-group" hidden>
+          <label for="cfg-admin-key" class="form-label" id="lbl-cfg-admin-key">Clave de administración (X-Admin-Key):</label>
+          <input
+            type="password"
+            id="cfg-admin-key"
+            class="input-control"
+            placeholder="Ingresa PORTFOLIO_ADMIN_KEY para guardar cambios"
+            autocomplete="off"
+          />
+          <span class="form-hint" id="hint-cfg-admin-key">Requerida cuando el servidor público protege la configuración.</span>
+        </div>
+      </div>
+
+      <footer class="modal-footer modal-footer-between">
+        <button type="button" id="cfg-sync-now-btn" class="btn btn-secondary">
+          Sincronizar con GitHub
+        </button>
+        <div class="footer-right-btns">
+          <button type="button" id="config-cancel-btn" class="btn btn-secondary">Cancelar</button>
+          <button type="submit" id="config-save-btn" class="btn btn-primary">Guardar cambios</button>
+        </div>
+      </footer>
+    </form>
+  </dialog>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p id="footer-text">Portafolio Dinámico Auto-actualizable · FastAPI + PostgreSQL + PyTorch + GitHub REST API</p>
+    </div>
+  </footer>
+</body>
+</html>
