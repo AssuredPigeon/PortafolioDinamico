@@ -1,0 +1,52 @@
+name: Sincronizar Portafolio (Python + PyTorch + PostgreSQL)
+
+on:
+  schedule:
+    # Job nocturno programado: todos los días a las 08:00 UTC (medianoche en Tijuana PST)
+    - cron: '0 8 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync-portfolio:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Instalar dependencias (PyTorch CPU + SQLAlchemy + Psycopg)
+        run: |
+          pip install --upgrade pip
+          pip install torch --index-url https://download.pytorch.org/whl/cpu
+          pip install -r requirements.txt
+
+      - name: Entrenar/verificar modelo PyTorch y sincronizar GitHub hacia PostgreSQL
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python -m backend.ml.train
+          python -m backend.sync_service
+
+      - name: Ejecutar suite de pruebas funcionales
+        run: pytest -q
+
+      - name: Guardar respaldo periódico en el repositorio (RNF4)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/backup_portfolio.json
+          if git diff --staged --quiet; then
+            echo "Sin cambios nuevos en el respaldo."
+          else
+            git commit -m "chore(backup): actualizar respaldo automático del portafolio"
+            git push
+          fi
