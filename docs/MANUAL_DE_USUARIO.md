@@ -27,10 +27,10 @@ py -3.11 -m pip install -r requirements.txt
    Copy-Item .env.example .env
    ```
 
-### 3.1 Base de datos SQL (Local vs PostgreSQL)
+### 3.1 Base de datos SQL (Modo Local Autocontenido)
 
-- **Modo local inmediato (recomendado para desarrollo y pruebas rápidas):** deja `DATABASE_URL=` vacío en `.env`. El sistema crea y utiliza automáticamente `data/portfolio_local.db` con las tablas relacionales `usuario`, `repositorio` y `actividad_commit`.
-- **Modo PostgreSQL (Supabase, Neon o servidor local):** pega tu cadena de conexión en `DATABASE_URL`. El backend convierte automáticamente esquemas `postgres://` o `postgresql://` al conector `postgresql+psycopg://` y crea las tablas si aún no existen (también puedes ejecutar manualmente `database/schema.sql`).
+- **Modo local autocontenido (modo oficial de entrega y uso):** deja `DATABASE_URL=` vacío en `.env`. El sistema crea y utiliza automáticamente `data/portfolio_local.db` con las tablas relacionales `usuario`, `repositorio` y `actividad_commit`. No requiere servicios de hosting externos ni servidores de base de datos en la nube.
+- **Compatibilidad opcional con PostgreSQL:** si cuentas con una base de datos PostgreSQL local o remota, puedes definir `DATABASE_URL`. El backend detecta y normaliza automáticamente la conexión con `postgresql+psycopg://` y crea las tablas si no existen (también puedes ejecutar manualmente `database/schema.sql`).
 
 ### 3.2 Cómo obtener tu `GITHUB_TOKEN` (recomendado)
 

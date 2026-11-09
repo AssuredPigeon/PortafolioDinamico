@@ -71,10 +71,11 @@ py -3.11 -m uvicorn backend.main:app --reload --port 8000
 
 Abre en el navegador: **http://localhost:8000** (o previsualiza cualquier cuenta pública con `http://localhost:8000/?user=NombreUsuario`).
 
-## Despliegue en Producción (Actividad L)
+## Modo de Operación y Despliegue (Actividad L)
 
-- **Contenedor Docker (Render / Railway / Koyeb):** el archivo `Dockerfile` instala Python 3.11, PyTorch CPU y levanta FastAPI en el puerto `8000`. Solo configura las variables de entorno `GITHUB_TOKEN`, `DATABASE_URL` (PostgreSQL de Supabase o Neon) y opcionalmente `PORTFOLIO_ADMIN_KEY` (desbloqueable desde la Pantalla 4 con `X-Admin-Key`).
-- **Actualización nocturna automática:** el flujo `.github/workflows/sync-portfolio.yml` sincroniza cada noche a las `08:00 UTC` (medianoche en Tijuana PST) y respalda `data/backup_portfolio.json`.
+- **Ejecución Local Autocontenida (Producción/Entrega oficial):** Para garantizar independencia de proveedores en la nube, costos nulos y máxima privacidad, el sistema opera de manera 100% autocontenida en la estación de trabajo local mediante `run_local.ps1` con base de datos relacional local SQLite (`data/portfolio_local.db`) en modo WAL. No requiere contratar ni configurar servicios de hosting externos (Render, Neon, Supabase).
+- **Contenedor Docker (Opcional):** El archivo `Dockerfile` empaqueta Python 3.11, PyTorch CPU y FastAPI en el puerto `8000` para quienes prefieran correr el servicio en un contenedor local aislado sin dependencias en el sistema operativo anfitrión.
+- **Sincronización Periódica Automatizada:** El script de sincronización `backend/sync_service.py` actualiza los repositorios de GitHub bajo demanda y guarda automáticamente un respaldo completo en `data/backup_portfolio.json`. El repositorio incluye además el flujo de GitHub Actions `.github/workflows/sync-portfolio.yml` preparado para ejecuciones programadas automáticas.
 
 ## Documentación Entregable (Actividad K)
 

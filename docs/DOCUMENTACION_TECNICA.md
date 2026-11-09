@@ -69,8 +69,8 @@ erDiagram
     }
 ```
 
-### Normalización de conexión a PostgreSQL
-La función `normalize_database_url()` (`backend/config.py`) transforma automáticamente cualquier cadena estándar `postgres://...` o `postgresql://...` (como las entregadas por **Supabase** o **Neon**) al dialecto `postgresql+psycopg://...` requerido por SQLAlchemy 2.0 con `psycopg` v3, activando `pool_pre_ping=True` para tolerar reconexiones en la nube.
+### Compatibilidad y normalización de conexión SQL
+Por diseño para entrega de proyecto sin costo y de máxima portabilidad, el sistema opera con base de datos relacional local SQLite (`data/portfolio_local.db` con WAL activado) cuando `DATABASE_URL` no está definida. Para compatibilidad en caso de conectarse a un servidor PostgreSQL externo o local, la función `normalize_database_url()` (`backend/config.py`) transforma automáticamente cualquier cadena estándar `postgres://...` o `postgresql://...` al dialecto `postgresql+psycopg://...` requerido por SQLAlchemy 2.0 con `psycopg` v3, activando `pool_pre_ping=True` para tolerar reconexiones de red.
 
 ---
 
